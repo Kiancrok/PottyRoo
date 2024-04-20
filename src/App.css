@@ -1,0 +1,198 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.kang { height: 100px;}
+.imgr { height: 280px;}
+.imgl { height: 280px;}
+.insta {height: 30px; }
+.face {height: 30px; }
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.imgr:hover {
+  filter: drop-shadow(0 0 2em #090909aa);
+}
+.links ul li a:hover {
+background-color: #026b2c;}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+ul {
+  list-style: none; /* Remove the bullet points from unordered lists */
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 1.0s ease-in-out;
+}
+
+/* App.css */
+
+.header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+/* App.css */
+
+/* Header styles */
+
+
+.header {
+  position: sticky;
+  background-image: linear-gradient(to right, #34d399, #fbbf24);
+  width: 100%; /* Ensure the header spans the full width */
+  height: 70px; /* Adjust height as needed */
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img.kang {
+  margin: 3px;
+}
+
+.header h1 {
+  font-size: 5rem;
+  color: #000;
+  text-align: center;
+}
+
+/* Navigation menu styles */
+.links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  background-color: #6ee7b7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 930px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+  }
+
+  .header img.kang {
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .links ul li {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    zoom: 0.9; /* Adjust the zoom level as needed */
+  }
+}
+@media (max-width: 361px) {
+  body {
+    zoom: 0.7; /* Adjust the zoom level as needed */
+  }
+}
+.events-container {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding */
+}
+
+.events-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  padding: 0;
+}
+
+.events-list li {
+  margin: 10px;
+}
+
+.event-image {
+  width: 200px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+}

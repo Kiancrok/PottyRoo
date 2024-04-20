@@ -1,0 +1,38 @@
+/* Events.css */
+.event-image:hover{
+    filter: drop-shadow(0 0 2em #090909aa);
+}
+.event-image { height: 260px; width: 260px;}
+
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.events-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.events-list-item {
+    margin: 10px;
+}
+  
+.events-list-item a {
+    display: block;
+    text-decoration: none;
+}
+  
+.events-list-item img {
+    width: 200px;
+    height: auto;
+}
+  
+@media screen and (max-width: 768px) {
+    .events-list-item {
+        width: 50%; /* Display two items per row on smaller screens */
+    }
+}
