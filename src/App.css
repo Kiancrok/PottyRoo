@@ -5,8 +5,54 @@
   text-align: center;
 }
 .kang { height: 100px;}
-.imgr { height: 280px;}
-.imgl { height: 280px;}
+.imgr { height: 280px;
+  list-style: none;
+  margin-bottom: 10px;
+   transition: transform 0.3s ease;
+}
+.imgt {
+  height: 200px; /* Initial height */
+  width: 5%; /* Initial width */
+  list-style: none;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, margin-left 0.3s ease; /* Add margin-left to transition */
+  margin: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.imgt:hover {
+  transform: scaleX(3); /* Expand to original width on hover */
+}
+
+/* Move images on the left away from the hovered image */
+.imgt:hover ~ .imgt-left {
+  margin-left: 50px; /* Adjust the distance as needed */
+}
+
+/* Move images on the right away from the hovered image */
+.imgt:hover ~ .imgt-right {
+  margin-left: 50px; /* Adjust the distance as needed */
+}
+/* Move images on the right away from the hovered image */
+.imgt:hover {
+  margin-left:50px;
+  margin-right: 50px; /* Adjust the distance as needed */
+}
+.imgr:hover {
+  transform: scale(1.1); 
+}
+@media screen and (max-width: 930px) {
+  .imgt{  height: 75px; /* Initial height */
+  width: auto; /* Initial width */
+  list-style: none;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, margin-left 0.3s ease; /* Add margin-left to transition */
+  margin: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+}
+
+
 .insta {height: 30px; }
 .face {height: 30px; }
 .logo {
@@ -18,8 +64,6 @@
 .imgr:hover {
   filter: drop-shadow(0 0 2em #090909aa);
 }
-.links ul li a:hover {
-background-color: #026b2c;}
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -132,6 +176,10 @@ ul {
 .links ul li {
   list-style: none;
   margin-bottom: 10px;
+   transition: transform 0.3s ease;
+}
+.links ul li:hover {
+  transform: scale(1.1); 
 }
 
 .links ul li a {
@@ -141,7 +189,10 @@ ul {
   background-color: #6ee7b7;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
+ 
+}
+.links ul li a:hover {
+  background-color: #026b2c;
 }
 
 /* Media queries for responsiveness */
@@ -168,6 +219,9 @@ ul {
   body {
     zoom: 0.9; /* Adjust the zoom level as needed */
   }
+  .imgl { height: 140px;
+    margin: 10px;
+    }
 }
 @media (max-width: 361px) {
   body {

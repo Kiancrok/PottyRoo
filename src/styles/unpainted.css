@@ -1,0 +1,45 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.image-with-number {
+  margin: 10px;
+  text-align: center;
+}
+
+.imgl {
+  width: 190px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-with-number p {
+  margin-top: 5px;
+}
+.imgl { height: 200px;
+  margin: 10px;
+  }
+  @media (max-width: 520px) {
+    .imgl { height: 120px;
+      width: auto;
+      margin: 10px;
+      }
+      body {
+        zoom: 0.9; /* Adjust the zoom level as needed */
+      }
+  }
+

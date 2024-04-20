@@ -3,18 +3,12 @@ import React from 'react';
 function Painted() {
   return (
     <div>
-      <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
-     <h1>private</h1>
+      <img className="imgt" src="/sell.png" alt="" />
+      <img className="imgt" src="/sell.png" alt="" />
+      <img className="imgt" src="/sell.png" alt="" />
+      <img className="imgt" src="/sell.png" alt="" />
+      <img className="imgt" src="/sell.png" alt="" />
+      <img className="imgt" src="/sell.png" alt="" />
     </div>
   );
 }

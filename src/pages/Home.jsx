@@ -10,6 +10,7 @@ function Home() {
                 <h1>This is Nigel my project car</h1>
                 <h1>This is Nigel my project car</h1>
                 <h1>This is Nigel my project car</h1>
+                <input type= "button" />
                 <h1>This is Nigel my project car</h1>
                 <h1>This is Nigel my project car</h1>
                 <h1>This is Nigel my project car</h1>

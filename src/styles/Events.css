@@ -1,8 +1,12 @@
 /* Events.css */
 .event-image:hover{
     filter: drop-shadow(0 0 2em #090909aa);
+    transform: scale(1.1);
 }
-.event-image { height: 260px; width: 260px;}
+.event-image { height: 260px; width: 260px;list-style: none;
+    margin-bottom: 10px;
+     transition: transform 0.3s ease;
+  }
 
 .events-container {
     max-width: 1200px;
