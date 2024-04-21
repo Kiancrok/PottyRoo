@@ -24,7 +24,11 @@
 
 .imgl {
   width: 190px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+  transition: transform 0.3s ease; /* Maintain aspect ratio */
+}
+.imgl:hover{
+  transform: scale(1.4);
 }
 
 .image-with-number p {

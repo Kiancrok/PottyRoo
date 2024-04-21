@@ -1,0 +1,33 @@
+.imgt {
+    height: 200px; /* Initial height */
+    width: 5%; /* Initial width */
+    list-style: none;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, margin-left 0.3s ease; /* Add margin-left to transition */
+    margin: 10px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+  
+  .imgt:hover {
+    transform: scaleX(3); /* Expand to original width on hover */
+  }
+  
+  /* Move images on the left away from the hovered image */
+  .imgt:hover ~ .imgt-left {
+    margin-left: 50px; /* Adjust the distance as needed */
+  }
+  
+  /* Move images on the right away from the hovered image */
+  .imgt:hover ~ .imgt-right {
+    margin-left: 50px; /* Adjust the distance as needed */
+  }
+  /* Move images on the right away from the hovered image */
+  .imgt:hover {
+    margin-left:50px;
+    margin-right: 50px; /* Adjust the distance as needed */
+  }
+  @media screen and (max-width: 930px){
+    .message{
+    display: none
+  }
+}
